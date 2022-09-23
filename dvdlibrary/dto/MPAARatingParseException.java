@@ -1,8 +1,5 @@
 package dvdlibrary.dto;
 
-/**
- * An Exception raised when attempting to parse a bad MPAA rating.
- */
 public class MPAARatingParseException extends Exception {
 
     private static String getExceptionMessage(String mpaaRating) {
