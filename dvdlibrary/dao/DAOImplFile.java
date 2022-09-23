@@ -143,9 +143,6 @@ public class DAOImplFile implements DAO {
 		int dvdCount = DVD_LIBRARY.size();
 		DVD[] allDVDs = new DVD[dvdCount];
 
-		// DVD library should only be changed through DAO
-		// So have to be careful not to return any reference to existing DVD objects
-		// Therefore we clone each DVD into a new object
 		for (int i = 0; i < dvdCount; i++)
 			allDVDs[i] = new DVD(DVD_LIBRARY.get(i));
 
