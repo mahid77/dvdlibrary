@@ -63,7 +63,6 @@ public class DAOImplFile implements DAO {
 
 		DVD object = new DVD(tokens[0]);
 
-		// Strings are no problem
 		if (!isFieldNull(tokens[2])) object.setStudioName(tokens[2]);
 		if (!isFieldNull(tokens[3])) object.setDirectorName(tokens[3]);
 		if (!isFieldNull(tokens[6])) object.setUserNote(tokens[6]);
