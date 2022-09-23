@@ -1,8 +1,5 @@
 package dvdlibrary.dto;
 
-/**
- * An Exception raised when attempting to parse a bad date.
- */
 public class DVDDateParseException extends Exception {
 
     private static String getExceptionMessage(String movieTitle) {
