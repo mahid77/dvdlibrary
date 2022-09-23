@@ -1,8 +1,5 @@
 package io;
 
-/**
- * An Exception raised by the data store.
- */
 public class DataStoreException extends Exception {
 
     public DataStoreException(String error) {
