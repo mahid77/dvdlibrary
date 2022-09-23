@@ -68,9 +68,6 @@ public class DAOImplFile implements DAO {
 		if (!isFieldNull(tokens[3])) object.setDirectorName(tokens[3]);
 		if (!isFieldNull(tokens[6])) object.setUserNote(tokens[6]);
 
-		// These must be parsed and can throw exceptions,
-		// if this happens just leave the respective field null
-
 		try {
 			object.setUserRating(Short.parseShort(tokens[5]));
 		} catch (NumberFormatException e) {}
