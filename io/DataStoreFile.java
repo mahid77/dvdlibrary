@@ -17,12 +17,6 @@ public class DataStoreFile {
         this.file = new File(fileName);
     }
 
-    /**
-	 * Creates the file if it does not exist.
-     * Read & Write already will take care of this.
-	 * @return TRUE if a fresh file had to be created, otherise FALSE.
-	 * @throws DataStoreException In the case of an IO error preventing file creation.
-	 */
 	public boolean init() throws DataStoreException {
 		try {
 			return file.createNewFile();
@@ -31,10 +25,6 @@ public class DataStoreFile {
 		}
 	}
 
-    /**
-     * @return A Scanner object for reading the file.
-     * @throws DataStoreException In the case of an IO error preventing file access.
-     */
 	public Scanner getReader() throws DataStoreException {
 		try {
             init();
@@ -44,10 +34,6 @@ public class DataStoreFile {
 		}
 	}
 
-    /**
-     * @return A PrintWriter object for writing the file.
-     * @throws DataStoreException In the case of an IO error preventing file write.
-     */
     public PrintWriter getWriter() throws DataStoreException {
 		try {
 			return new PrintWriter(new FileWriter(file));
